@@ -7,8 +7,14 @@ import org.springframework.stereotype.Component;
 public class MasterV3 {
     @Autowired
     Journeyman journeyman;
+    @Autowired
+    Journeyman2 journeyman2;
+    @Autowired
+    Journeyman3 journeyman3;
 
     public void delegateWork() {
         journeyman.performWork();
+        journeyman2.performWork2();
+        journeyman3.performWork3();
     }
 }
